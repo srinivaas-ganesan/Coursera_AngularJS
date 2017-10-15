@@ -11,12 +11,6 @@ function LunchCheckController ($scope) {
   
   $scope.setText = function () {  
     var str = $scope.value
-	
-	if(str == ''){
-		$scope.food = 'Please enter data first!';
-		return;
-	}
-
     var num = str.split(",");
 	
 	if(num.length > 3)
